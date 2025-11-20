@@ -1,0 +1,575 @@
+{
+  "metadata": {
+    "dataset_name": "Multi-Agent GraphRAG Benchmark Dataset - Search Type Comparison",
+    "version": "2.0",
+    "created": "2025-11-15",
+    "description": "Benchmark queries for evaluating multi-agent RAG systems across different search types (vector, graph, hybrid)",
+    "total_queries": 30,
+    "papers_covered": 6,
+    "categories": ["factual", "comparison", "synthesis", "methodological"],
+    "search_types": ["vector", "graph", "hybrid"]
+  },
+  "test_queries": [
+    {
+      "id": "q1_vector",
+      "query": "What are the main advantages of using knowledge graphs in RAG systems?",
+      "category": "synthesis",
+      "complexity": "moderate",
+      "search_type": "vector",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government",
+        "Research on risk decision-making generation method",
+        "A Multi-Agent and GraphRAG-Based Framework for Hydraulic Projects"
+      ],
+      "ground_truth_claims": [
+        "Knowledge graphs enable multi-hop reasoning",
+        "KGs improve retrieval precision through structured relations",
+        "Graph databases like Neo4j support efficient traversal",
+        "KGs provide explainability and transparency"
+      ],
+      "expected_sources_count": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "q1_graph",
+      "query": "What are the main advantages of using knowledge graphs in RAG systems?",
+      "category": "synthesis",
+      "complexity": "moderate",
+      "search_type": "graph",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government",
+        "Research on risk decision-making generation method",
+        "A Multi-Agent and GraphRAG-Based Framework for Hydraulic Projects"
+      ],
+      "ground_truth_claims": [
+        "Knowledge graphs enable multi-hop reasoning",
+        "KGs improve retrieval precision through structured relations",
+        "Graph databases like Neo4j support efficient traversal",
+        "KGs provide explainability and transparency"
+      ],
+      "expected_sources_count": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "q1_hybrid",
+      "query": "What are the main advantages of using knowledge graphs in RAG systems?",
+      "category": "synthesis",
+      "complexity": "moderate",
+      "search_type": "hybrid",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government",
+        "Research on risk decision-making generation method",
+        "A Multi-Agent and GraphRAG-Based Framework for Hydraulic Projects"
+      ],
+      "ground_truth_claims": [
+        "Knowledge graphs enable multi-hop reasoning",
+        "KGs improve retrieval precision through structured relations",
+        "Graph databases like Neo4j support efficient traversal",
+        "KGs provide explainability and transparency"
+      ],
+      "expected_sources_count": 3,
+      "difficulty": "medium"
+    },
+    {
+      "id": "q2_vector",
+      "query": "How do multi-agent systems collaborate in GraphRAG frameworks?",
+      "category": "methodological",
+      "complexity": "complex",
+      "search_type": "vector",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government",
+        "A Multi-Agent and GraphRAG-Based Framework for Hydraulic Projects",
+        "SAMAC-R3-MED"
+      ],
+      "ground_truth_claims": [
+        "Agents specialize in retrieval, synthesis, and validation tasks",
+        "Multi-agent coordination reduces hallucination",
+        "Agents share knowledge through a central knowledge graph",
+        "Modular architecture allows agent replacement"
+      ],
+      "expected_sources_count": 3,
+      "difficulty": "hard"
+    },
+    {
+      "id": "q2_graph",
+      "query": "How do multi-agent systems collaborate in GraphRAG frameworks?",
+      "category": "methodological",
+      "complexity": "complex",
+      "search_type": "graph",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government",
+        "A Multi-Agent and GraphRAG-Based Framework for Hydraulic Projects",
+        "SAMAC-R3-MED"
+      ],
+      "ground_truth_claims": [
+        "Agents specialize in retrieval, synthesis, and validation tasks",
+        "Multi-agent coordination reduces hallucination",
+        "Agents share knowledge through a central knowledge graph",
+        "Modular architecture allows agent replacement"
+      ],
+      "expected_sources_count": 3,
+      "difficulty": "hard"
+    },
+    {
+      "id": "q2_hybrid",
+      "query": "How do multi-agent systems collaborate in GraphRAG frameworks?",
+      "category": "methodological",
+      "complexity": "complex",
+      "search_type": "hybrid",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government",
+        "A Multi-Agent and GraphRAG-Based Framework for Hydraulic Projects",
+        "SAMAC-R3-MED"
+      ],
+      "ground_truth_claims": [
+        "Agents specialize in retrieval, synthesis, and validation tasks",
+        "Multi-agent coordination reduces hallucination",
+        "Agents share knowledge through a central knowledge graph",
+        "Modular architecture allows agent replacement"
+      ],
+      "expected_sources_count": 3,
+      "difficulty": "hard"
+    },
+    {
+      "id": "q3_vector",
+      "query": "What is the role of validation agents in multi-agent RAG systems?",
+      "category": "factual",
+      "complexity": "simple",
+      "search_type": "vector",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government"
+      ],
+      "ground_truth_claims": [
+        "Validation agents fact-check synthesized answers",
+        "They detect hallucinations and unsupported claims",
+        "Citation verification is performed by validation agents"
+      ],
+      "expected_sources_count": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q3_graph",
+      "query": "What is the role of validation agents in multi-agent RAG systems?",
+      "category": "factual",
+      "complexity": "simple",
+      "search_type": "graph",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government"
+      ],
+      "ground_truth_claims": [
+        "Validation agents fact-check synthesized answers",
+        "They detect hallucinations and unsupported claims",
+        "Citation verification is performed by validation agents"
+      ],
+      "expected_sources_count": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q3_hybrid",
+      "query": "What is the role of validation agents in multi-agent RAG systems?",
+      "category": "factual",
+      "complexity": "simple",
+      "search_type": "hybrid",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government"
+      ],
+      "ground_truth_claims": [
+        "Validation agents fact-check synthesized answers",
+        "They detect hallucinations and unsupported claims",
+        "Citation verification is performed by validation agents"
+      ],
+      "expected_sources_count": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q4_vector",
+      "query": "Compare vector-based RAG and graph-based RAG approaches",
+      "category": "comparison",
+      "complexity": "complex",
+      "search_type": "vector",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government",
+        "SAMAC-R3-MED"
+      ],
+      "ground_truth_claims": [
+        "Vector RAG excels at semantic similarity matching",
+        "Graph RAG enables entity-relation reasoning",
+        "Hybrid approaches combine both strengths",
+        "Graph RAG supports multi-hop queries"
+      ],
+      "expected_sources_count": 2,
+      "difficulty": "hard"
+    },
+    {
+      "id": "q4_graph",
+      "query": "Compare vector-based RAG and graph-based RAG approaches",
+      "category": "comparison",
+      "complexity": "complex",
+      "search_type": "graph",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government",
+        "SAMAC-R3-MED"
+      ],
+      "ground_truth_claims": [
+        "Vector RAG excels at semantic similarity matching",
+        "Graph RAG enables entity-relation reasoning",
+        "Hybrid approaches combine both strengths",
+        "Graph RAG supports multi-hop queries"
+      ],
+      "expected_sources_count": 2,
+      "difficulty": "hard"
+    },
+    {
+      "id": "q4_hybrid",
+      "query": "Compare vector-based RAG and graph-based RAG approaches",
+      "category": "comparison",
+      "complexity": "complex",
+      "search_type": "hybrid",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government",
+        "SAMAC-R3-MED"
+      ],
+      "ground_truth_claims": [
+        "Vector RAG excels at semantic similarity matching",
+        "Graph RAG enables entity-relation reasoning",
+        "Hybrid approaches combine both strengths",
+        "Graph RAG supports multi-hop queries"
+      ],
+      "expected_sources_count": 2,
+      "difficulty": "hard"
+    },
+    {
+      "id": "q5_vector",
+      "query": "What fine-tuning strategies are used for domain-specific LLMs?",
+      "category": "synthesis",
+      "complexity": "moderate",
+      "search_type": "vector",
+      "expected_papers": [
+        "AcuGPT-Agent",
+        "AI-Powered System to Facilitate Personalized Adaptive Learning"
+      ],
+      "ground_truth_claims": [
+        "LoRA is used for parameter-efficient fine-tuning",
+        "Domain-adaptive training improves task-specific performance",
+        "Supervised fine-tuning with domain knowledge",
+        "Instruction tuning enhances following capability"
+      ],
+      "expected_sources_count": 2,
+      "difficulty": "medium"
+    },
+    {
+      "id": "q5_graph",
+      "query": "What fine-tuning strategies are used for domain-specific LLMs?",
+      "category": "synthesis",
+      "complexity": "moderate",
+      "search_type": "graph",
+      "expected_papers": [
+        "AcuGPT-Agent",
+        "AI-Powered System to Facilitate Personalized Adaptive Learning"
+      ],
+      "ground_truth_claims": [
+        "LoRA is used for parameter-efficient fine-tuning",
+        "Domain-adaptive training improves task-specific performance",
+        "Supervised fine-tuning with domain knowledge",
+        "Instruction tuning enhances following capability"
+      ],
+      "expected_sources_count": 2,
+      "difficulty": "medium"
+    },
+    {
+      "id": "q5_hybrid",
+      "query": "What fine-tuning strategies are used for domain-specific LLMs?",
+      "category": "synthesis",
+      "complexity": "moderate",
+      "search_type": "hybrid",
+      "expected_papers": [
+        "AcuGPT-Agent",
+        "AI-Powered System to Facilitate Personalized Adaptive Learning"
+      ],
+      "ground_truth_claims": [
+        "LoRA is used for parameter-efficient fine-tuning",
+        "Domain-adaptive training improves task-specific performance",
+        "Supervised fine-tuning with domain knowledge",
+        "Instruction tuning enhances following capability"
+      ],
+      "expected_sources_count": 2,
+      "difficulty": "medium"
+    },
+    {
+      "id": "q6_vector",
+      "query": "How does Neo4j support knowledge graph operations in RAG systems?",
+      "category": "factual",
+      "complexity": "simple",
+      "search_type": "vector",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government",
+        "Research on risk decision-making generation method"
+      ],
+      "ground_truth_claims": [
+        "Neo4j stores knowledge as triples (subject-predicate-object)",
+        "Cypher queries enable efficient graph traversal",
+        "Neo4j supports visualization of graph structure"
+      ],
+      "expected_sources_count": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q6_graph",
+      "query": "How does Neo4j support knowledge graph operations in RAG systems?",
+      "category": "factual",
+      "complexity": "simple",
+      "search_type": "graph",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government",
+        "Research on risk decision-making generation method"
+      ],
+      "ground_truth_claims": [
+        "Neo4j stores knowledge as triples (subject-predicate-object)",
+        "Cypher queries enable efficient graph traversal",
+        "Neo4j supports visualization of graph structure"
+      ],
+      "expected_sources_count": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q6_hybrid",
+      "query": "How does Neo4j support knowledge graph operations in RAG systems?",
+      "category": "factual",
+      "complexity": "simple",
+      "search_type": "hybrid",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government",
+        "Research on risk decision-making generation method"
+      ],
+      "ground_truth_claims": [
+        "Neo4j stores knowledge as triples (subject-predicate-object)",
+        "Cypher queries enable efficient graph traversal",
+        "Neo4j supports visualization of graph structure"
+      ],
+      "expected_sources_count": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q7_vector",
+      "query": "What are the benefits of multimodal knowledge graphs?",
+      "category": "synthesis",
+      "complexity": "moderate",
+      "search_type": "vector",
+      "expected_papers": [
+        "Research on risk decision-making generation method",
+        "SAMAC-R3-MED"
+      ],
+      "ground_truth_claims": [
+        "Multimodal KGs integrate text, images, and tables",
+        "They enable richer context retrieval",
+        "Support for heterogeneous data types",
+        "Improved decision-making with multimodal evidence"
+      ],
+      "expected_sources_count": 2,
+      "difficulty": "medium"
+    },
+    {
+      "id": "q7_graph",
+      "query": "What are the benefits of multimodal knowledge graphs?",
+      "category": "synthesis",
+      "complexity": "moderate",
+      "search_type": "graph",
+      "expected_papers": [
+        "Research on risk decision-making generation method",
+        "SAMAC-R3-MED"
+      ],
+      "ground_truth_claims": [
+        "Multimodal KGs integrate text, images, and tables",
+        "They enable richer context retrieval",
+        "Support for heterogeneous data types",
+        "Improved decision-making with multimodal evidence"
+      ],
+      "expected_sources_count": 2,
+      "difficulty": "medium"
+    },
+    {
+      "id": "q7_hybrid",
+      "query": "What are the benefits of multimodal knowledge graphs?",
+      "category": "synthesis",
+      "complexity": "moderate",
+      "search_type": "hybrid",
+      "expected_papers": [
+        "Research on risk decision-making generation method",
+        "SAMAC-R3-MED"
+      ],
+      "ground_truth_claims": [
+        "Multimodal KGs integrate text, images, and tables",
+        "They enable richer context retrieval",
+        "Support for heterogeneous data types",
+        "Improved decision-making with multimodal evidence"
+      ],
+      "expected_sources_count": 2,
+      "difficulty": "medium"
+    },
+    {
+      "id": "q8_vector",
+      "query": "Explain the architecture of the Hybrid Multi-Agent GraphRAG system",
+      "category": "methodological",
+      "complexity": "complex",
+      "search_type": "vector",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government"
+      ],
+      "ground_truth_claims": [
+        "System has retrieval, synthesis, and validation agents",
+        "Knowledge graph stores curated e-government data",
+        "Multi-hop traversal over policy entities",
+        "Compliance with European AI Act requirements"
+      ],
+      "expected_sources_count": 1,
+      "difficulty": "hard"
+    },
+    {
+      "id": "q8_graph",
+      "query": "Explain the architecture of the Hybrid Multi-Agent GraphRAG system",
+      "category": "methodological",
+      "complexity": "complex",
+      "search_type": "graph",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government"
+      ],
+      "ground_truth_claims": [
+        "System has retrieval, synthesis, and validation agents",
+        "Knowledge graph stores curated e-government data",
+        "Multi-hop traversal over policy entities",
+        "Compliance with European AI Act requirements"
+      ],
+      "expected_sources_count": 1,
+      "difficulty": "hard"
+    },
+    {
+      "id": "q8_hybrid",
+      "query": "Explain the architecture of the Hybrid Multi-Agent GraphRAG system",
+      "category": "methodological",
+      "complexity": "complex",
+      "search_type": "hybrid",
+      "expected_papers": [
+        "Hybrid Multi-Agent GraphRAG for E-Government"
+      ],
+      "ground_truth_claims": [
+        "System has retrieval, synthesis, and validation agents",
+        "Knowledge graph stores curated e-government data",
+        "Multi-hop traversal over policy entities",
+        "Compliance with European AI Act requirements"
+      ],
+      "expected_sources_count": 1,
+      "difficulty": "hard"
+    },
+    {
+      "id": "q9_vector",
+      "query": "What is the role of retrieval-reranker-responder models in multimodal RAG?",
+      "category": "methodological",
+      "complexity": "complex",
+      "search_type": "vector",
+      "expected_papers": [
+        "SAMAC-R3-MED"
+      ],
+      "ground_truth_claims": [
+        "Retriever finds relevant multimodal documents",
+        "Reranker improves ranking of candidates",
+        "Responder generates final answer from top results",
+        "Semantic alignment across modalities"
+      ],
+      "expected_sources_count": 1,
+      "difficulty": "hard"
+    },
+    {
+      "id": "q9_graph",
+      "query": "What is the role of retrieval-reranker-responder models in multimodal RAG?",
+      "category": "methodological",
+      "complexity": "complex",
+      "search_type": "graph",
+      "expected_papers": [
+        "SAMAC-R3-MED"
+      ],
+      "ground_truth_claims": [
+        "Retriever finds relevant multimodal documents",
+        "Reranker improves ranking of candidates",
+        "Responder generates final answer from top results",
+        "Semantic alignment across modalities"
+      ],
+      "expected_sources_count": 1,
+      "difficulty": "hard"
+    },
+    {
+      "id": "q9_hybrid",
+      "query": "What is the role of retrieval-reranker-responder models in multimodal RAG?",
+      "category": "methodological",
+      "complexity": "complex",
+      "search_type": "hybrid",
+      "expected_papers": [
+        "SAMAC-R3-MED"
+      ],
+      "ground_truth_claims": [
+        "Retriever finds relevant multimodal documents",
+        "Reranker improves ranking of candidates",
+        "Responder generates final answer from top results",
+        "Semantic alignment across modalities"
+      ],
+      "expected_sources_count": 1,
+      "difficulty": "hard"
+    },
+    {
+      "id": "q10_vector",
+      "query": "How do knowledge graphs support decision-making in hydraulic engineering?",
+      "category": "synthesis",
+      "complexity": "moderate",
+      "search_type": "vector",
+      "expected_papers": [
+        "A Multi-Agent and GraphRAG-Based Framework for Hydraulic Projects",
+        "Research on risk decision-making generation method"
+      ],
+      "ground_truth_claims": [
+        "KGs encode domain-specific hydraulic knowledge",
+        "Support risk assessment and inspection tasks",
+        "Enable automated decision support",
+        "Modular design allows adaptation to different domains"
+      ],
+      "expected_sources_count": 2,
+      "difficulty": "medium"
+    },
+    {
+      "id": "q10_graph",
+      "query": "How do knowledge graphs support decision-making in hydraulic engineering?",
+      "category": "synthesis",
+      "complexity": "moderate",
+      "search_type": "graph",
+      "expected_papers": [
+        "A Multi-Agent and GraphRAG-Based Framework for Hydraulic Projects",
+        "Research on risk decision-making generation method"
+      ],
+      "ground_truth_claims": [
+        "KGs encode domain-specific hydraulic knowledge",
+        "Support risk assessment and inspection tasks",
+        "Enable automated decision support",
+        "Modular design allows adaptation to different domains"
+      ],
+      "expected_sources_count": 2,
+      "difficulty": "medium"
+    },
+    {
+      "id": "q10_hybrid",
+      "query": "How do knowledge graphs support decision-making in hydraulic engineering?",
+      "category": "synthesis",
+      "complexity": "moderate",
+      "search_type": "hybrid",
+      "expected_papers": [
+        "A Multi-Agent and GraphRAG-Based Framework for Hydraulic Projects",
+        "Research on risk decision-making generation method"
+      ],
+      "ground_truth_claims": [
+        "KGs encode domain-specific hydraulic knowledge",
+        "Support risk assessment and inspection tasks",
+        "Enable automated decision support",
+        "Modular design allows adaptation to different domains"
+      ],
+      "expected_sources_count": 2,
+      "difficulty": "medium"
+    }
+  ]
+}
