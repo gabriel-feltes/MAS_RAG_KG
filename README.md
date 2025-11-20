@@ -190,7 +190,6 @@ curl -X POST "http://localhost:8058/chat/mas" \
   }'
 ```
 
-```
 
 ## API Documentation
 
@@ -205,9 +204,9 @@ Visit http://localhost:8058/docs for interactive API documentation once the serv
 - **Semantic Chunking**: Intelligent document splitting using LLM analysis
 - **Production Ready**: Comprehensive testing, logging, and error handling
 
-## Project Structure
+## Project Structure in Bash tree format
 
-```
+```bash
 .
 ├── agent
 │   ├── agent.py
